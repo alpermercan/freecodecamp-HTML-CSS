@@ -1,0 +1,298 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
+
+
+/* Root */
+:root{
+    --main-black: #000000;
+    --main-dark-grey: #1e1e1e;
+    --main-grey : #3c3c3c;
+    --main-light-grey : #4d4d4d;
+    --main-bilson: #cec7ba;
+    --main-white: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* global */
+.u-typeoff{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-white)
+}
+
+
+/* *Navbar */
+
+nav{
+    background-color: var(--main-black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0.95;
+    width: 100%;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--main-black) ;
+    color: var(--main-white);
+    max-width: 1124px;
+    
+}
+
+#navbar a{
+    color: var(--main-white);
+}
+
+.nav-item{
+    margin: 0 1rem;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.nav-links li{
+    padding: 1.5rem;
+    margin-left: 1rem ;
+}
+
+
+
+/* *Header */
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-dark-grey);
+
+    text-align: center;
+}
+
+.letter .title{
+    color: var(--main-white);
+}
+.letter .about {
+    color: var(--main-bilson);
+    font-style: italic;
+    opacity: 0.3;
+}
+
+
+/* *Work */
+
+#projects{
+    padding: 6rem 2rem;
+    background-color: var(--main-bilson) ;
+    color: var(--main-grey);
+    text-align: center;
+}
+
+#projects h2{
+    margin: 0 auto 4rem auto ;
+    border-bottom: 0.1rem solid var(--main-grey);
+    font-size: 2rem;
+    max-width: 620px;
+    
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+#projects .item{
+    background-color: var(--main-grey);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: var(--main-white);
+    text-align: center;
+
+    transition: all 0.1s ease-in;
+}
+
+#projects .item:hover{
+    background-color: var(--main-light-grey);
+    
+}
+
+.project-image{
+    height: calc(100% - 4rem);
+    width: 100%;
+    object-fit: cover;
+    box-sizing: inherit;
+}
+
+
+.project-title {
+    padding: 1rem;
+}
+
+
+
+
+/** about */
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    background-color: var(--main-grey);
+    color: var(--main-white);
+}
+
+.about-container{
+    padding: 0 2rem;
+}
+
+.about-container-desc{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+.about-image{
+    width:80% ;
+    height: auto;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+.about-image img{
+    width: 100%;
+}
+
+.about-description{
+    display: flex;
+    flex-direction: column;
+    margin:auto 0 auto 1.5rem;
+}
+
+.about-description h2, .about, .about-description{
+    margin: 0 0 0.5rem 2rem;
+}
+.about-description .about{
+    opacity: 0.5;
+    
+}
+
+
+
+#about .hr{
+    margin: 3rem auto;
+    height: 1px;
+    width: 60%;
+    min-width: 850px;
+    background-color: var(--main-white);
+}
+
+.contact{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact ul li{
+    margin: 0 2rem;
+    font-size: 2rem;
+    transition: all 0.2s;
+}
+
+.contact ul li:hover{
+    transform: translateY(5px);
+}
+
+.contact ul li a{
+    display: flex;
+    align-items: center;
+}
+
+.contact ul li i{
+    display: flex;
+}
+
+.contact ul li p{
+    text-transform: capitalize;
+    margin-left: 0.75rem;
+}
+
+
+footer{
+    height: 6rem;
+    background-color: var(--main-dark-grey);
+    color: var(--main-white);
+    text-align: center
+}
+
+#footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#footer div p{
+    margin: 25px auto;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+	width: 5px; /*genislik 10px olsun*/
+	background-color: var(--main-white); /*scrollbar arkaplan renk*/
+	/* border-left: 1px solid #f1f1f1;  arkaplan sol tarafa cizgi cek */
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--main-dark-grey); /*scrollbar renk*/
+	border-radius:15px /*oval olsun*/
+}
+::-webkit-scrollbar-thumb:hover { /*tiklandiginda*/
+	background-color: var(--main-black);
+}

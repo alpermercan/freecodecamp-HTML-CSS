@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@100;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #534340;
+    background-color: #BB9981;
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+header {
+    margin: 2rem;
+    text-align: center;
+    color: #534340;
+}
+
+header #title {
+    font-size: 2.25rem;
+    margin: 1rem;
+}
+
+header #description {
+    font-style: italic;
+}
+
+
+
+/* form */
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #C5D8A4;
+    margin: 0.5rem 2rem;
+    max-width: 900px;
+    border-radius: 10px;
+
+}
+
+#survey-form .form-group {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select,
+#comment {
+    border-radius: 5px;
+
+    border: none;
+    padding: 5px 10px;
+    margin: 5px 0;
+    outline: none;
+}
+
+
+.title {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+/* button */
+
+.btn {
+    border: none;
+    background-color: rgb(8, 143, 8);
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+
+.btn:hover {
+    background-color: rgb(15, 169, 15);
+}
+
+/* footer */
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 80px;
+    background-color: #534340;
+    text-align: center;
+    color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

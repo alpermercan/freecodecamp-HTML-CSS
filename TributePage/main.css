@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(186, 180, 180);
+}
+
+#title{
+    margin-top: 30px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 75%;
+    padding: 20px 30px;
+    margin: 20px;
+}
+
+#img-div{
+    
+    text-align: center;
+}
+
+#img-div #image{
+    width: 85%;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+#img-div #img-caption{
+    font-style: italic;
+}
+
+.container{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+#tribute-info p{
+    padding: 0 15px;
+    max-height: 850px;
+}
+
+#albums{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#albums ul {
+    list-style-type: none;
+    margin-right: 100px;
+}
+
+
+#tribute-link a{
+    color: rgb(208, 55, 55);
+}
+
+
+
+/* *****MARGİN******* */
+.m-top{
+    margin-top: 15px;
+}
+
+.m-bottom{
+    margin-bottom: 15px;
+}
+
+
+
+
+/********** relative */
+
+@media (max-width:1000px){
+    
+    #main{
+        max-width: 85%;
+        padding: 10px;
+    }
+
+    #image {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width:800px){
+    #albums{
+        text-align: center;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    
+    }
+
+    #albums ul {
+        margin-right: 0px;
+
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:650px){
+    
+    #main{
+        max-width: 95%;
+        padding: 5px;
+    }
+
+    #image {
+        width: 90%;
+    }
+    
+}
+
+
+
+
